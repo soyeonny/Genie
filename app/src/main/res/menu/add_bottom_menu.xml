@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/gallery"
+        android:icon="@drawable/ic_photo"
+        android:title="gallery" />
+    <item
+        android:id="@+id/memo"
+        android:icon="@drawable/ic_pencil"
+        android:title="memo" />
+
+    <item android:title="Item" />
+</menu>
