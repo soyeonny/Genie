@@ -22,7 +22,6 @@
         app:layout_constraintStart_toStartOf="@+id/id_layout" />
 
     <com.google.android.material.textfield.TextInputLayout
-
         android:id="@+id/id_layout"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
