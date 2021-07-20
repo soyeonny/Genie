@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "631845380701",
+    "project_id": "genie-48f3b",
+    "storage_bucket": "genie-48f3b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:631845380701:android:02092c2e3ffb51f38d63b4",
+        "android_client_info": {
+          "package_name": "com.example.miliy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "631845380701-g2rvj4l9g0q3lp0hk807k80no0vkm0ul.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.miliy",
+            "certificate_hash": "c53576515b940125698bdb0aaf989116e402d8a1"
+          }
+        },
+        {
+          "client_id": "631845380701-5ck9b26upkoou01h43muuv2aqgj03ulg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDuwGjGaEGUtAXWCUuupYgXsrDnhcH7LPI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "631845380701-5ck9b26upkoou01h43muuv2aqgj03ulg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
