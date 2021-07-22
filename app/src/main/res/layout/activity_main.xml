@@ -7,6 +7,17 @@
     android:layout_height="match_parent"
     >
 
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bnv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        android:background="#161422"
+        app:itemIconTint="#FFFFFF"
+        app:labelVisibilityMode="unlabeled"
+        app:menu="@menu/bottom_menu" />
+
     <FrameLayout
         android:id="@+id/fragments_frame"
         android:layout_width="match_parent"
@@ -15,15 +26,6 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
 
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bnv"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="0dp"
-        android:background="#afcbff"
-        app:itemIconTint="#FFFFFF"
-        app:labelVisibilityMode="unlabeled"
-        app:menu="@menu/bottom_menu" />
+
 
 </RelativeLayout>

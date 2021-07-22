@@ -8,19 +8,18 @@
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="add"
-        />
+        android:layout_height="match_parent" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/add_bnv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
-        android:background="#dcd3ff"
-        app:itemIconTint="#FFFFFF"
-
-
+        android:background="#242327"
+        app:itemIconTint="@color/white"
         app:labelVisibilityMode="unlabeled"
         app:menu="@menu/add_bottom_menu" />
+<!--        app:itemIconTint="<your color>"-->
+
 
 </FrameLayout>

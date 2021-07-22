@@ -19,6 +19,12 @@ class LoginActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        button2!!.setOnClickListener {
+            // SignUpActivity 연결
+            val intent = Intent(this@LoginActivity, MainActivity::class.java)
+            startActivity(intent)
+        }
+
 
     }
 }

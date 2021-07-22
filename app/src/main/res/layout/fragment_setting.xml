@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/Mypage"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#21202B"
     android:orientation="vertical">
 
     <ScrollView
@@ -23,42 +25,46 @@
                 android:id="@+id/toolbar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/purple_200"
                 android:minHeight="?attr/actionBarSize">
 
                 <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="70dp"
+                    android:background="#21202B"
                     android:orientation="horizontal">
 
-                    <ImageView
+                    <TextView
+                        android:layout_width="130dp"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="10dp"
                         android:layout_marginTop="20dp"
-                        android:layout_width="300dp"
-                        android:layout_height="40dp"
-                        android:layout_centerInParent="true" />
-
-
+                        android:text="마이페이지"
+                        android:textColor="#FFFFFF"
+                        android:textSize="23dp"
+                        android:textStyle="bold" />
                 </RelativeLayout>
             </androidx.cardview.widget.CardView>
-
 
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="670dp"
-                android:layout_below="@+id/toolbar">
+                android:layout_below="@+id/toolbar"
+                android:background="#21202B">
+
 
 
                 <TextView
                     android:id="@+id/mypage_tv"
                     android:layout_width="match_parent"
                     android:layout_height="30dp"
-
                     android:layout_marginLeft="15dp"
                     android:gravity="bottom"
-                    android:text="마이페이지" />
+                    android:text="마이페이지"
+                    android:textColor="#ffff" />
 
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/mypage2_cv"
+                    android:id="@+id/first_cv"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:layout_below="@+id/mypage_tv"
@@ -66,94 +72,123 @@
                     android:layout_marginRight="15dp">
 
                     <RelativeLayout
-                        android:id="@+id/pwd_rl"
+                        android:id="@+id/first_rl"
                         android:layout_width="match_parent"
                         android:layout_height="50dp"
+                        android:background="#21202B"
                         android:clickable="true"
                         android:focusable="true">
 
                         <ImageView
-                            android:id="@+id/pwd_iv"
+                            android:id="@+id/first_iv"
                             android:layout_width="20dp"
                             android:layout_height="20dp"
                             android:layout_centerVertical="true"
                             android:layout_margin="10dp"
                             android:clickable="false"
                             android:focusable="false"
-                            android:src="@drawable/ic_key" />
+                            android:src="@drawable/ic_favorite" />
 
                         <TextView
-                            android:id="@+id/pwd_tv"
-                            android:layout_width="match_parent"
+                            android:id="@+id/first_tv"
+                            android:layout_width="200dp"
                             android:layout_height="match_parent"
                             android:layout_margin="10dp"
-                            android:layout_toRightOf="@+id/pwd_iv"
+                            android:layout_toRightOf="@+id/first_iv"
                             android:clickable="false"
                             android:focusable="false"
                             android:gravity="center_vertical"
-                            android:text="비밀번호 수정"
-                            android:textColor="@color/black"
+                            android:text="건강 데이터 연동하기"
+                            android:textColor="#ffff"
+                            android:textSize="20dp" />
+
+                        <TextView
+                            android:layout_width="60dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="50dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_toEndOf="@+id/first_tv"
+                            android:clickable="true"
+                            android:gravity="center_vertical"
+                            android:text="ON >"
+                            android:textColor="#807E7E"
                             android:textSize="20dp" />
                     </RelativeLayout>
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/mypage3_cv"
+                    android:id="@+id/sec_cv"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
-                    android:layout_below="@+id/mypage2_cv"
+                    android:layout_below="@+id/first_cv"
                     android:layout_marginLeft="15dp"
                     android:layout_marginRight="15dp">
 
                     <RelativeLayout
-                        android:id="@+id/responsed_rl"
+                        android:id="@+id/sec_rl"
                         android:layout_width="match_parent"
                         android:layout_height="50dp"
+                        android:background="#21202B"
                         android:clickable="true"
                         android:focusable="true">
 
                         <ImageView
-                            android:id="@+id/responsed_iv"
+                            android:id="@+id/sec_iv"
                             android:layout_width="20dp"
                             android:layout_height="20dp"
                             android:layout_centerVertical="true"
                             android:layout_margin="10dp"
                             android:clickable="false"
                             android:focusable="false"
-                            android:src="@drawable/ic_paper" />
+                            android:src="@drawable/ic_pro" />
 
                         <TextView
-                            android:id="@+id/responsed_tv"
-                            android:layout_width="match_parent"
+                            android:id="@+id/sec_tv"
+                            android:layout_width="200dp"
                             android:layout_height="match_parent"
                             android:layout_margin="10dp"
-                            android:layout_toRightOf="@+id/responsed_iv"
+                            android:layout_toRightOf="@+id/sec_iv"
                             android:clickable="false"
                             android:focusable="false"
                             android:gravity="center_vertical"
-                            android:text="작성한 게시물"
-                            android:textColor="@color/black"
+                            android:text="pro 구매하기"
+                            android:textColor="#ffff"
+                            android:textSize="20dp" />
+
+                        <TextView
+                            android:layout_width="30dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="80dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_toEndOf="@+id/sec_tv"
+                            android:clickable="true"
+                            android:gravity="center_vertical"
+                            android:text=" >"
+                            android:textColor="#807E7E"
                             android:textSize="20dp" />
                     </RelativeLayout>
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/mypage4_cv"
+                    android:id="@+id/thr_cv"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
-                    android:layout_below="@+id/mypage3_cv"
+                    android:layout_below="@+id/sec_cv"
                     android:layout_marginLeft="15dp"
                     android:layout_marginRight="15dp">
 
                     <RelativeLayout
-                        android:id="@+id/fav_rl"
+                        android:id="@+id/thr_rl"
                         android:layout_width="match_parent"
                         android:layout_height="50dp"
+                        android:background="#21202B"
                         android:clickable="true"
                         android:focusable="true">
 
                         <ImageView
-                            android:id="@+id/fav_iv"
+                            android:id="@+id/thr_iv"
                             android:layout_width="20dp"
                             android:layout_height="20dp"
                             android:layout_centerVertical="true"
@@ -163,124 +198,475 @@
                             android:src="@drawable/ic_notice" />
 
                         <TextView
-                            android:id="@+id/fav_tv"
-                            android:layout_width="match_parent"
+                            android:id="@+id/thr_tv"
+                            android:layout_width="200dp"
                             android:layout_height="match_parent"
                             android:layout_margin="10dp"
-                            android:layout_toRightOf="@+id/fav_iv"
+                            android:layout_toRightOf="@+id/thr_iv"
                             android:clickable="false"
                             android:focusable="false"
                             android:gravity="center_vertical"
-                            android:text="공지사항"
-                            android:textColor="@color/black"
+                            android:text="알림"
+                            android:textColor="#ffff"
                             android:textSize="20dp" />
-                    </RelativeLayout>
-                </androidx.cardview.widget.CardView>
-
-                <TextView
-                    android:id="@+id/logout_tv"
-                    android:layout_width="match_parent"
-                    android:layout_height="30dp"
-                    android:layout_below="@+id/mypage4_cv"
-                    android:layout_marginLeft="15dp"
-                    android:layout_marginRight="15dp"
-                    android:gravity="bottom"
-                    android:text="로그아웃"
-                    android:textStyle="bold" />
-
-
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/logout_cv"
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:layout_below="@+id/logout_tv"
-                    android:layout_marginLeft="15dp"
-                    android:layout_marginRight="15dp">
-
-                    <RelativeLayout
-                        android:id="@+id/Logout_layout"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:clickable="true"
-                        android:focusable="true"
-
-                        >
-
-                        <ImageView
-                            android:id="@+id/logout_iv"
-                            android:layout_width="20dp"
-                            android:layout_height="20dp"
-                            android:layout_alignParentLeft="true"
-                            android:layout_centerVertical="true"
-                            android:layout_margin="10dp"
-                            android:clickable="false"
-                            android:focusable="false"
-                            android:src="@drawable/ic_logout" />
 
                         <TextView
-                            android:id="@+id/logout_dsa"
-                            android:layout_width="match_parent"
+                            android:layout_width="30dp"
                             android:layout_height="match_parent"
-                            android:layout_centerVertical="true"
-                            android:layout_margin="10dp"
-                            android:layout_toRightOf="@+id/logout_iv"
-                            android:clickable="false"
-                            android:focusable="false"
+                            android:layout_marginStart="80dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_toEndOf="@+id/thr_tv"
+                            android:clickable="true"
                             android:gravity="center_vertical"
-                            android:text="로그아웃"
-                            android:textColor="@color/black"
+                            android:text=" >"
+                            android:textColor="#807E7E"
                             android:textSize="20dp" />
-
                     </RelativeLayout>
                 </androidx.cardview.widget.CardView>
 
-                <TextView
-                    android:id="@+id/l_tv"
-                    android:layout_width="match_parent"
-                    android:layout_height="30dp"
-                    android:layout_below="@+id/logout_cv"
-                    android:layout_marginLeft="15dp"
-                    android:gravity="center_vertical"
-                    android:text="탈퇴하기"
-                    android:textSize="15dp"
-                    android:textStyle="bold" />
-
                 <androidx.cardview.widget.CardView
+                    android:id="@+id/four_cv"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
-                    android:layout_below="@+id/l_tv"
+                    android:layout_below="@+id/thr_cv"
                     android:layout_marginLeft="15dp"
                     android:layout_marginRight="15dp">
 
                     <RelativeLayout
-                        android:id="@+id/secession"
+                        android:id="@+id/four_rl"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-
+                        android:layout_height="50dp"
+                        android:background="#21202B"
                         android:clickable="true"
                         android:focusable="true">
 
                         <ImageView
-                            android:id="@+id/g_iv"
+                            android:id="@+id/four_iv"
                             android:layout_width="20dp"
                             android:layout_height="20dp"
                             android:layout_centerVertical="true"
                             android:layout_margin="10dp"
                             android:clickable="false"
                             android:focusable="false"
-                            android:src="@drawable/ic_off" />
+                            android:src="@drawable/ic_lock" />
 
                         <TextView
-                            android:layout_width="match_parent"
+                            android:id="@+id/four_tv"
+                            android:layout_width="200dp"
                             android:layout_height="match_parent"
-                            android:layout_centerVertical="true"
                             android:layout_margin="10dp"
-                            android:layout_toRightOf="@+id/g_iv"
+                            android:layout_toRightOf="@+id/four_iv"
                             android:clickable="false"
                             android:focusable="false"
                             android:gravity="center_vertical"
-                            android:text="탈퇴하기"
-                            android:textColor="@color/black"
+                            android:text="잠금"
+                            android:textColor="#ffff"
+                            android:textSize="20dp" />
+
+                        <TextView
+                            android:layout_width="30dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="80dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_toEndOf="@+id/four_tv"
+                            android:clickable="true"
+                            android:gravity="center_vertical"
+                            android:text=" >"
+                            android:textColor="#807E7E"
+                            android:textSize="20dp" />
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/five_cv"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/four_cv"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp">
+
+                    <RelativeLayout
+                        android:id="@+id/five_rl"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="#21202B"
+                        android:clickable="true"
+                        android:focusable="true">
+
+                        <ImageView
+                            android:id="@+id/five_iv"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_centerVertical="true"
+                            android:layout_margin="10dp"
+                            android:clickable="false"
+                            android:focusable="false"
+                            android:src="@drawable/ic_calendar" />
+
+                        <TextView
+                            android:id="@+id/five_tv"
+                            android:layout_width="200dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="10dp"
+                            android:layout_toRightOf="@+id/five_iv"
+                            android:clickable="false"
+                            android:focusable="false"
+                            android:gravity="center_vertical"
+                            android:text="일주일 시작일"
+                            android:textColor="#ffff"
+                            android:textSize="20dp" />
+
+                        <TextView
+                            android:layout_width="30dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="80dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_toEndOf="@+id/five_tv"
+                            android:clickable="true"
+                            android:gravity="center_vertical"
+                            android:text=" >"
+                            android:textColor="#807E7E"
+                            android:textSize="20dp" />
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/six_cv"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/five_cv"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp">
+
+                    <RelativeLayout
+                        android:id="@+id/six_rl"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="#21202B"
+                        android:clickable="true"
+                        android:focusable="true">
+
+                        <ImageView
+                            android:id="@+id/six_iv"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_centerVertical="true"
+                            android:layout_margin="10dp"
+                            android:clickable="false"
+                            android:focusable="false"
+                            android:src="@drawable/ic_ruler" />
+
+                        <TextView
+                            android:id="@+id/six_tv"
+                            android:layout_width="200dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="10dp"
+                            android:layout_toRightOf="@+id/six_iv"
+                            android:clickable="false"
+                            android:focusable="false"
+                            android:gravity="center_vertical"
+                            android:text="단위"
+                            android:textColor="#ffff"
+                            android:textSize="20dp" />
+
+                        <TextView
+                            android:layout_width="30dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="80dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_toEndOf="@+id/six_tv"
+                            android:clickable="true"
+                            android:gravity="center_vertical"
+                            android:text=" >"
+                            android:textColor="#807E7E"
+                            android:textSize="20dp" />
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/sev_cv"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/six_cv"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp">
+
+                    <RelativeLayout
+                        android:id="@+id/sev_rl"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="#21202B"
+                        android:clickable="true"
+                        android:focusable="true">
+
+                        <ImageView
+                            android:id="@+id/sev_iv"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_centerVertical="true"
+                            android:layout_margin="10dp"
+                            android:clickable="false"
+                            android:focusable="false"
+                            android:src="@drawable/ic_code" />
+
+                        <TextView
+                            android:id="@+id/sev_tv"
+                            android:layout_width="200dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="10dp"
+                            android:layout_toRightOf="@+id/sev_iv"
+                            android:clickable="false"
+                            android:focusable="false"
+                            android:gravity="center_vertical"
+                            android:text="프로모션 코드"
+                            android:textColor="#ffff"
+                            android:textSize="20dp" />
+
+                        <TextView
+                            android:layout_width="30dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="80dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_toEndOf="@+id/sev_tv"
+                            android:clickable="true"
+                            android:gravity="center_vertical"
+                            android:text=" >"
+                            android:textColor="#807E7E"
+                            android:textSize="20dp" />
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/setting_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_below="@+id/sev_cv"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="bottom"
+                    android:text="관리"
+                    android:textColor="#ffff" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/eig_cv"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/setting_tv"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp">
+
+                    <RelativeLayout
+                        android:id="@+id/eig_rl"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="#21202B"
+                        android:clickable="true"
+                        android:focusable="true">
+
+                        <ImageView
+                            android:id="@+id/eig_iv"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_centerVertical="true"
+                            android:layout_margin="10dp"
+                            android:clickable="false"
+                            android:focusable="false"
+                            android:src="@drawable/ic_mail" />
+
+                        <TextView
+                            android:id="@+id/eig_tv"
+                            android:layout_width="200dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="10dp"
+                            android:layout_toRightOf="@+id/eig_iv"
+                            android:clickable="false"
+                            android:focusable="false"
+                            android:gravity="center_vertical"
+                            android:text="개발자에게 문의/피드백"
+                            android:textColor="#ffff"
+                            android:textSize="20dp"
+                            tools:ignore="DuplicateIds" />
+
+                        <TextView
+                            android:layout_width="30dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="80dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_toEndOf="@+id/eig_tv"
+                            android:clickable="true"
+                            android:gravity="center_vertical"
+                            android:text=" >"
+                            android:textColor="#807E7E"
+                            android:textSize="20dp" />
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/nine_cv"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/eig_cv"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp">
+
+                    <RelativeLayout
+                        android:id="@+id/nine_rl"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="#21202B"
+                        android:clickable="true"
+                        android:focusable="true">
+
+                        <ImageView
+                            android:id="@+id/nine_iv"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_centerVertical="true"
+                            android:layout_margin="10dp"
+                            android:clickable="false"
+                            android:focusable="false"
+                            android:src="@drawable/ic_star" />
+
+                        <TextView
+                            android:id="@+id/nine_tv"
+                            android:layout_width="200dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="10dp"
+                            android:layout_toRightOf="@+id/nine_iv"
+                            android:clickable="false"
+                            android:focusable="false"
+                            android:gravity="center_vertical"
+                            android:text="앱스토어 리뷰 남기기"
+                            android:textColor="#ffff"
+                            android:textSize="20dp"
+                            tools:ignore="DuplicateIds" />
+
+                        <TextView
+                            android:layout_width="30dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="80dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_toEndOf="@+id/nine_tv"
+                            android:clickable="true"
+                            android:gravity="center_vertical"
+                            android:text=" >"
+                            android:textColor="#807E7E"
+                            android:textSize="20dp" />
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/ten_cv"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/nine_cv"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp">
+
+                    <RelativeLayout
+                        android:id="@+id/ten_rl"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="#21202B"
+                        android:clickable="true"
+                        android:focusable="true">
+
+                        <ImageView
+                            android:id="@+id/ten_iv"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_centerVertical="true"
+                            android:layout_margin="10dp"
+                            android:clickable="false"
+                            android:focusable="false"
+                            android:src="@drawable/ic_power_white" />
+
+                        <TextView
+                            android:id="@+id/ten_tv"
+                            android:layout_width="200dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="10dp"
+                            android:layout_toRightOf="@+id/ten_iv"
+                            android:clickable="false"
+                            android:focusable="false"
+                            android:gravity="center_vertical"
+                            android:text="모든 데이터 초기화"
+                            android:textColor="#ffff"
+                            android:textSize="20dp"
+                            tools:ignore="DuplicateIds" />
+
+                        <TextView
+                            android:layout_width="30dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="80dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_toEndOf="@+id/ten_tv"
+                            android:clickable="true"
+                            android:gravity="center_vertical"
+                            android:text=" >"
+                            android:textColor="#807E7E"
+                            android:textSize="20dp" />
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/ele_cv"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/ten_cv"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp">
+
+                    <RelativeLayout
+                        android:id="@+id/ele_rl"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="#21202B"
+                        android:clickable="true"
+                        android:focusable="true">
+
+                        <ImageView
+                            android:id="@+id/ele_iv"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_centerVertical="true"
+                            android:layout_margin="10dp"
+                            android:clickable="false"
+                            android:focusable="false"
+                            android:src="@drawable/ic_version" />
+
+                        <TextView
+                            android:id="@+id/ele_tv"
+                            android:layout_width="200dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="10dp"
+                            android:layout_toRightOf="@+id/ele_iv"
+                            android:clickable="false"
+                            android:focusable="false"
+                            android:gravity="center_vertical"
+                            android:text="버전 정보"
+                            android:textColor="#ffff"
+                            android:textSize="20dp"
+                            tools:ignore="DuplicateIds" />
+
+                        <TextView
+                            android:layout_width="30dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="80dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_toEndOf="@+id/ele_tv"
+                            android:clickable="true"
+                            android:gravity="center_vertical"
+                            android:text=" >"
+                            android:textColor="#807E7E"
                             android:textSize="20dp" />
                     </RelativeLayout>
                 </androidx.cardview.widget.CardView>

@@ -2,13 +2,20 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/gallery"
-        android:icon="@drawable/ic_photo"
-        android:title="gallery" />
+        android:id="@+id/meal"
+        android:icon="@drawable/dinner"
+        android:title="meal" />
     <item
-        android:id="@+id/memo"
-        android:icon="@drawable/ic_pencil"
-        android:title="memo" />
+        android:id="@+id/body"
+        android:icon="@drawable/body"
+        android:title="body" />
 
-    <item android:title="Item" />
+    <item
+        android:id="@+id/workout"
+        android:icon="@drawable/fire"
+        android:title="workout" />
+    <item
+        android:id="@+id/water"
+        android:icon="@drawable/drop"
+        android:title="water" />
 </menu>

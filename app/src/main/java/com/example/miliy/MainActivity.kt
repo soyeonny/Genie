@@ -5,6 +5,7 @@ import android.os.Bundle
 import androidx.fragment.app.Fragment
 import com.example.miliy.fragment.*
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.fragment_add.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -17,7 +18,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         replaceFragment(CalendarFragment)
-
 
         bnv.setOnNavigationItemSelectedListener {
             when (it.itemId) {
